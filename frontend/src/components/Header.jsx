@@ -49,7 +49,7 @@ function Header() {
                     <span className='bg-primary ring-1 ring-slate-900/5  medium-14 absolute left-5 -top-2.5 flexCenter w-5 h-5 rounded-full shadow-md'>0</span>
                 </Link>
                 <div className='relative group'>
-                    <div onClick = {!token && navigate('/')}>
+                    <div >
                         {token ? (<div><TbUserCircle className='text-[29px] cursor-pointer'/></div>) 
                                : (<button className='btn-outline flexCenter gap-x-2'>Login<RiUserLine/></button>
                         )}

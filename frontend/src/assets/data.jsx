@@ -484,7 +484,7 @@ export const FOOTER_LINKS = [
     title: "Contact Us",
     links: [
       { label: "Contact Number", value: "123-456-7890" },
-      { label: "Email Address", value: "info@bacala.com" },
+      { label: "Email Address", value: "esrabooks470@gmail.com" },
     ],
   };
   
@@ -493,7 +493,6 @@ export const FOOTER_LINKS = [
     links: [
       { icon: <FaFacebook />, id: "facebook" },
       { icon: <FaInstagram />, id: "instagram" },
-      { icon: <FaTwitter />, id: "twitter" },
       { icon: <FaYoutube />, id: "youtube" },
       { icon: <FaLinkedin />, id: "linkedin" },
     ],
