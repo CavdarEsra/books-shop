@@ -9,7 +9,7 @@ import { ShopContext } from '../context/ShopContext'
 
 function Header() {
 
-    const {navigate, token, setToken} = useContext(ShopContext) 
+    const {navigate, token, setToken, getCartCount} = useContext(ShopContext) 
     const [active, setActive] = useState(false)
     const [menuOpened, setMenuOpened] = useState(false)
 
@@ -46,7 +46,7 @@ function Header() {
                 <CgMenuLeft onClick={toggleMenu} className='text-2xl xl:hidden cursor-pointer'/>
                 <Link to={'/cart'} className='flex relative'>
                     <RiShoppingBag4Line className='text-[33px] bg-secondary text-primary p-1.5 rounded-full'/>
-                    <span className='bg-primary ring-1 ring-slate-900/5  medium-14 absolute left-5 -top-2.5 flexCenter w-5 h-5 rounded-full shadow-md'>0</span>
+                    <span className='bg-primary ring-1 ring-slate-900/5  medium-14 absolute left-5 -top-2.5 flexCenter w-5 h-5 rounded-full shadow-md'>{getCartCount()}</span>
                 </Link>
                 <div className='relative group'>
                     <div >
